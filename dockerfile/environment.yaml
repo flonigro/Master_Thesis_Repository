@@ -1,0 +1,12 @@
+name: simunet
+channels:
+  - https://packages.nnpdf.science/public/
+  - conda-forge
+  - defaults
+dependencies:
+  - nnpdf=4.0.5 [--only-deps]
+  - gxx_linux-64
+  - pkg-config
+  - swig
+  - cmake
+  - sysroot_linux-64=2.17
