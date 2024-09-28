@@ -23,7 +23,7 @@ c_values = np.linspace(-3,3,50)
 def calculate_chi2(sm_extracted, sm_real, smeft_linear, smeft_quadratic, c, cov_matrix):
     data = sm_real['value'].values
 
-    diff = ((sm_real['value'] - ((sm_extracted['Cross Section'] + c *( smeft_linear['Cross Section']) + c*c*((smeft_quadratic['Values'])).T))) @ (np.abs(cov_matrix)) @ (sm_real['value'] - (sm_extracted['Cross Section'] + c * (smeft_linear['Cross Section']) + c*c*(smeft_quadratic['Values'])))/len(data-1))
+    diff = ((sm_real['value'] - ((sm_extracted['Cross Section'] + c *( smeft_linear['Cross Section']) + c*c*((smeft_quadratic['Values'])).T))) @ ((cov_matrix)) @ (sm_real['value'] - (sm_extracted['Cross Section'] + c * (smeft_linear['Cross Section']) + c*c*(smeft_quadratic['Values'])))/len(data-1))
     #print("invcov", inv_cov_matrix)
 
     #print("diff", diff)
