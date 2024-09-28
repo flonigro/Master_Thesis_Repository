@@ -1,0 +1,64 @@
+dependent_variables:
+- header: {name: D2(SIG)/DPT/DABS(YRAP), units: PB/GEV}
+  qualifiers:
+  - {name: ABS(YRAP), value: 3.2-4.7}
+  - {name: RE, value: P P --> JET X}
+  - {name: SQRT(S), units: GEV, value: '8000.0'}
+  values:
+  - errors:
+    - {label: stat, symerror: 56031.5}
+    - asymerror: {minus: -1084370.0, plus: 1023870.0}
+      label: sys
+    value: 4574000.0
+  - errors:
+    - {label: stat, symerror: 34844.1}
+    - asymerror: {minus: -448263.0, plus: 430624.0}
+      label: sys
+    value: 2027000.0
+  - errors:
+    - {label: stat, symerror: 20489.2}
+    - asymerror: {minus: -175507.0, plus: 179670.0}
+      label: sys
+    value: 905000.0
+  - errors:
+    - {label: stat, symerror: 17049.0}
+    - asymerror: {minus: -77222.0, plus: 83030.8}
+      label: sys
+    value: 421900.0
+  - errors:
+    - {label: stat, symerror: 10385.9}
+    - asymerror: {minus: -30862.3, plus: 32921.9}
+      label: sys
+    value: 174700.0
+  - errors:
+    - {label: stat, symerror: 4970.22}
+    - asymerror: {minus: -10451.1, plus: 11436.7}
+      label: sys
+    value: 63170.0
+  - errors:
+    - {label: stat, symerror: 3315.38}
+    - asymerror: {minus: -4174.75, plus: 4626.75}
+      label: sys
+    value: 26250.0
+  - errors:
+    - {label: stat, symerror: 1835.34}
+    - asymerror: {minus: -1749.21, plus: 1949.23}
+      label: sys
+    value: 11130.0
+  - errors:
+    - {label: stat, symerror: 1002.59}
+    - asymerror: {minus: -901.814, plus: 1051.63}
+      label: sys
+    value: 5922.0
+independent_variables:
+- header: {name: PT, units: GEV}
+  values:
+  - {high: 24.0, low: 21.0}
+  - {high: 28.0, low: 24.0}
+  - {high: 32.0, low: 28.0}
+  - {high: 37.0, low: 32.0}
+  - {high: 43.0, low: 37.0}
+  - {high: 49.0, low: 43.0}
+  - {high: 56.0, low: 49.0}
+  - {high: 64.0, low: 56.0}
+  - {high: 74.0, low: 64.0}
